@@ -10,7 +10,7 @@ document.body.addEventListener("mouseover", function(event) {
 
 });
 
-document.body.addEventListener("mouseleave", function(event) {
+document.body.addEventListener("mouseout", function(event) {
   chrome.runtime.sendMessage({toSay: "STOP the message"}, function() {});
 
 });
