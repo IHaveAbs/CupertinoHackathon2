@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(function(request) {
     console.log("message stopped");
   }
   else {
+    
     chrome.tts.speak(request.toSay, 
       { rate: 1.0, onEvent: function(event) {}}, function() {});
   }
