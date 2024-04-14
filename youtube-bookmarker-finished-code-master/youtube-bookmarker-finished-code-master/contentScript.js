@@ -3,9 +3,11 @@ console.log("fdslkafjldsakjfa");
 
 document.body.addEventListener("mouseover", function(event) {
   //console.log(event);
-  var elementext = event.target.innerText;
+  var elementext = event.target.innerText.toString();
   console.log(elementext)
 // create an instance of the speech synthesis object
-chrome.tts.speak(elementext, {'lang': 'en-US', 'rate': 1.0 }); // Adjust rate as needed
+  chrome.runtime.sendMessage({toSay: elementext}, function() {});
+
+   // Adjust rate as needed
 
 });
