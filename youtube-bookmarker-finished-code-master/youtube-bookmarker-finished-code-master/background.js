@@ -1,6 +1,6 @@
 
 chrome.runtime.onMessage.addListener(function(request) {
-  if (request.toSay == "STOP the message") {
+  if (request.toSay.toString() == "STOP the message") {
     chrome.tts.stop();
     console.log("message stopped");
   }
