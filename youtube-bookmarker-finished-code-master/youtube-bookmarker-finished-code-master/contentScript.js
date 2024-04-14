@@ -14,6 +14,7 @@ document.body.addEventListener("mouseout", function(event) {
 
 document.body.addEventListener("oncontextmenu", function(event) {
   var e = event;
+  console.log("hover");
   console.log(e.id);
 
 });
