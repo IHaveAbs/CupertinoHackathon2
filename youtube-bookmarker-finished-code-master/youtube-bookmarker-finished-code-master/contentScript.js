@@ -5,8 +5,8 @@ document.body.addEventListener("mouseover", function(event) {
   //console.log(elementext);
 // create an instance of the speech synthesis object
   chrome.runtime.sendMessage({toSay: elementext}, function() {});
-
-  console.log(document.getElementById(event.target.id.toString()));
+  chrome.runtime.sendMessage({toSay: "makesizebigger", toBe: event}, function() {});
+  //console.log(document.getElementById(event.target.id.toString()));
 
    // Adjust rate as needed
 

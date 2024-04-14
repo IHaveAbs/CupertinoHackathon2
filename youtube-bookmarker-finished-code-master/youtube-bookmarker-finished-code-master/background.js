@@ -4,6 +4,9 @@ chrome.runtime.onMessage.addListener(function(request) {
     chrome.tts.stop();
     console.log("message stopped");
   }
+  else if (request.toSay.toString() == "makesizebigger") {
+    console.log(request.toBe.target.id.toString());
+  }
   else {
     chrome.tts.speak(request.toSay, 
       { rate: 1.0, onEvent: function(event) {}}, function() {});
