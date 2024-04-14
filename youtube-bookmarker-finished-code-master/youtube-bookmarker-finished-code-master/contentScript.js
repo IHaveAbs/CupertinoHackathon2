@@ -1,5 +1,5 @@
 
-document.body.addEventListener("mouseover", function(event) {
+document.body.addEventListener("mouseenter", function(event) {
   //console.log(event);
   var elementext = event.target.innerText.toString();
   console.log(elementext);
@@ -9,3 +9,9 @@ document.body.addEventListener("mouseover", function(event) {
    // Adjust rate as needed
 
 });
+
+document.body.addEventListener("mouseleave", function(event) {
+  chrome.runtime.sendMessage({toSay: "STOP the message"}, function() {});
+
+});
+
