@@ -92,10 +92,10 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/bookmark.png",
-        "assets/play.png",
-        "assets/delete.png",
-        "assets/save.png"
+        "assets/logo.png",
+        "assets/logo.png",
+        "assets/logo.png",
+        "assets/logo.png"
       ],
       "matches": ["*://*/*"]
     }
