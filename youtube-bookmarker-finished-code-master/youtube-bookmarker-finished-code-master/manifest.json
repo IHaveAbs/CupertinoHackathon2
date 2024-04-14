@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Saving timestamps in YT videos",
   "permissions": ["storage", "tabs"],
-  "host_permissions": ["https://*.google.com/*"],
+  "host_permissions": ["http://*/*"],
   "background": {
     "service_worker": "background.js"
   },
