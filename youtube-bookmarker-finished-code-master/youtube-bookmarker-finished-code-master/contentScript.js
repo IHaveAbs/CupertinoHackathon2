@@ -1,19 +1,15 @@
 
-document.body.addEventListener("mouseover", function(event) {
-  //console.log(event);
-  var elementext = event.target.innerText.toString();
-  //console.log(elementext);
-// create an instance of the speech synthesis object
-  chrome.runtime.sendMessage({toSay: elementext}, function() {});
-  chrome.runtime.sendMessage({toSay: "makesizebigger", toBe: event}, function() {});
-  //console.log(document.getElementById(event.target.id.toString()));
+var hassizechanged = null;
 
-   // Adjust rate as needed
+document.body.addEventListener("mouseover", function(event) {
+  //send message to active text to speech
+  var elementext = event.target.innerText.toString();
+  chrome.runtime.sendMessage({toSay: elementext}, function() {});
 
 });
 
 document.body.addEventListener("mouseout", function(event) {
-  //console.log("messaged stopped 1");
+  //stops the text to speech
   chrome.runtime.sendMessage({toSay: "STOP the message"}, function() {});
 
 });
