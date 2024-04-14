@@ -11,6 +11,7 @@ document.body.addEventListener("mouseover", function(event) {
 });
 
 document.body.addEventListener("mouseout", function(event) {
+  console.log("messaged stopped 1");
   chrome.runtime.sendMessage({toSay: "STOP the message"}, function() {});
 
 });
