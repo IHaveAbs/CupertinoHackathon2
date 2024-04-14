@@ -1,7 +1,7 @@
 {
-  "name": "My YT Bookmarks",
-  "version": "0.1.0",
-  "description": "Saving timestamps in YT videos",
+  "name": "VisionVoice",
+  "version": "1.0",
+  "description": "Helping Improve The Browsing Experience Of The Visually Impaired",
   "permissions": ["accessibilityFeatures.modify",
     "accessibilityFeatures.read",
     "activeTab",
@@ -102,11 +102,11 @@
   ],
   "action": {
     "default_icon": {
-      "16": "assets/ext-icon.png",
-      "24": "assets/ext-icon.png",
-      "32": "assets/ext-icon.png"
+      "16": "assets/logo.png",
+      "24": "assets/logo.png",
+      "32": "assets/logo.png"
     },
-    "default_title": "My YT Bookmarks",
+    "default_title": "VisionVoice",
     "default_popup": "popup.html"
   },
   "manifest_version": 3
