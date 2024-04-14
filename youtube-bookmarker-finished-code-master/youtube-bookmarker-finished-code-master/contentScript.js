@@ -6,7 +6,6 @@ document.body.addEventListener("mouseover", function(event) {
   var elementext = event.target.innerText;
   console.log(elementext)
 // create an instance of the speech synthesis object
+chrome.tts.speak(elementext, {'lang': 'en-US', 'rate': 1.0 }); // Adjust rate as needed
+
 });
-function speak(elementext) {
-  chrome.tts.speak(elementext, { rate: 1.0 }); // Adjust rate as needed
-}
