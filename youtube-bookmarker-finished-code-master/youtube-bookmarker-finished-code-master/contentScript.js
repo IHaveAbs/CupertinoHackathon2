@@ -4,7 +4,7 @@ document.body.addEventListener("mouseover", function(event) {
   var elementext = event.target.innerText.toString();
   chrome.runtime.sendMessage({toSay: elementext}, function() {});
   originalsize = event.target.style.fontSize;
-  event.target.style.fontSize = "24px";
+  event.target.style.fontSize = "36px";
   
 });
 
