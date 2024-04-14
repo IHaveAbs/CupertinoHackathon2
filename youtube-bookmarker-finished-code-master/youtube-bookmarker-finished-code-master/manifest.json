@@ -85,7 +85,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.google.com/*"],
+      "matches": ["http://*/*"],
       "js": ["contentScript.js"]
     }
   ],
@@ -97,7 +97,7 @@
         "assets/delete.png",
         "assets/save.png"
       ],
-      "matches": ["https://*.google.com/*"]
+      "matches": ["http://*/*"]
     }
   ],
   "action": {
