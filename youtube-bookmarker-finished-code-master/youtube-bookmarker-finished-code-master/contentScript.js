@@ -1,5 +1,5 @@
 
-document.body.addEventListener("mouseenter", function(event) {
+document.body.addEventListener("mouseover", function(event) {
   //console.log(event);
   var elementext = event.target.innerText.toString();
   console.log(elementext);
