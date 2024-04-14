@@ -12,6 +12,9 @@ document.body.addEventListener("mouseover", function(event) {
 
 document.body.addEventListener("mouseout", function(event) {
   console.log("messaged stopped 1");
+  if (chrome.tts.isSpeaking()) {
+    console.log("messaged stopped 2");
+  }
   chrome.runtime.sendMessage({toSay: "STOP the message"}, function() {});
 
 });
