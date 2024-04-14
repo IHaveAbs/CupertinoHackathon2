@@ -9,7 +9,7 @@ document.body.addEventListener("mouseover", function(event) {
   const element = document.getElementById(event.target.id);
 
   console.log(element);
-  element.style.wdith = "400px";
+  element.style.width = "400px";
 
    // Adjust rate as needed
 
