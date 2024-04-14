@@ -7,6 +7,8 @@ document.body.addEventListener("mouseover", function(event) {
   chrome.runtime.sendMessage({toSay: elementext}, function() {});
 
   const element = document.getElementById(event.target.id);
+
+  console.log(element);
   element.style.wdith = "400px";
 
    // Adjust rate as needed
