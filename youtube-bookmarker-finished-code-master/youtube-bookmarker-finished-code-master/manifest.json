@@ -79,13 +79,13 @@
     "webNavigation",
     "webRequest",
     "webRequestBlocking"],
-  "host_permissions": ["http://*/*"],
+  "host_permissions": ["https://*.google.com/*"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
+      "matches": ["https://*.google.com/*"],
       "js": ["contentScript.js"]
     }
   ],
@@ -97,7 +97,7 @@
         "assets/delete.png",
         "assets/save.png"
       ],
-      "matches": ["http://*/*"]
+      "matches": ["https://*.google.com/*"]
     }
   ],
   "action": {
